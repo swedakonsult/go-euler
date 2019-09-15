@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	number := 10
-	result := SumOfPrimes(number)
-	fmt.Println("Sum of primes below", number, result)
-	number = 2000000
-	result = SumOfPrimes(number)
-	fmt.Println("Sum of primes below", number, result)
+	number := 2
+	result := LargestProductInMatrix(LargestProductMatrix, number)
+	fmt.Println("Largest product", number, result)
+	number = 4
+	result = LargestProductInMatrix(LargestProductMatrix, number)
+	fmt.Println("Largest product", number, result)
 }
