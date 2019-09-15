@@ -4,9 +4,9 @@ import "fmt"
 
 func main() {
 	number := 10
-	result := SmallestMultiple(number)
-	fmt.Println("Smallest multiple", number, result)
-	number = 20
-	result = SmallestMultiple(number)
-	fmt.Println("Smallest multiple", number, result)
+	result := SumSquaredDifference(number)
+	fmt.Println("Difference of sum squared", number, result)
+	number = 100
+	result = SumSquaredDifference(number)
+	fmt.Println("Difference of sum squared", number, result)
 }
