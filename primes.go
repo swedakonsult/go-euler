@@ -1,6 +1,21 @@
-// 10,001st prime number
 package main
 
+// Problem 10
+func SumOfPrimes(below int) int {
+	primes := getPrimes(below, below)
+
+	sum := 0
+	for _, prime := range primes {
+		if prime > below {
+			break
+		}
+		sum += prime
+	}
+
+	return sum
+}
+
+// Problem 7
 func NthPrimeNumber(n int) int {
 	primes := getPrimes(n*n, n)
 
@@ -19,7 +34,7 @@ Outer:
 			}
 		}
 		primeNumbers = append(primeNumbers, number)
-		if len(primeNumbers) == stopAt {
+		if len(primeNumbers) >= stopAt {
 			return primeNumbers
 		}
 	}
